@@ -1,0 +1,38 @@
+.btn {
+  padding: 1.5rem 1.5rem;
+
+  font-size: 1.6rem;
+  font-family: Roboto, serif;
+  font-weight: 500;
+  line-height: 2.4rem;
+  letter-spacing: 0.04em;
+  color: $text-accent;
+
+  border: $border;
+  border-color: $border-color;
+  border-radius: $btn-border-radius;
+  background-color: $btn-default-bg;
+
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $text-white;
+    border-color: $text-accent;
+    background-color: $btn-hover-bg;
+
+    cursor: pointer;
+  }
+
+  &.content-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 23.5rem;
+
+    color: $text-white;
+    background: #50daa8;
+
+    text-transform: unset;
+  }
+}

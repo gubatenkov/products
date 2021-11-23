@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*........DEFAULT STYLES.......*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e5e5e5;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  padding: 10rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/*........VARIABLES.......*/
+@import 'variables';
+
+/*........COMPONENTS.......*/
+@import 'components/btn';
+@import 'components/product-card';
+@import 'components/modal';
+@import 'components/spinner';
+
+/*........MEDIA QUERIES.......*/
+@import 'media';

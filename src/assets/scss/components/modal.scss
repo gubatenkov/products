@@ -1,0 +1,208 @@
+.css-79ws1d-MuiModal-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 100%;
+  max-width: 38.4rem;
+  padding: 5rem 5rem 6.6rem;
+  margin: 0 auto;
+
+  background-color: $text-white;
+  border-radius: $card-border-radius;
+
+  position: relative;
+
+  .modal-btn__close {
+    width: 4rem;
+    height: 4rem;
+
+    position: absolute;
+    top: -15px;
+    right: -10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 50%;
+    background: #f2f2f2;
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+
+  .modal-header {
+    text-align: center;
+  }
+
+  .modal-header__category {
+    margin: 0 0 1.5rem 0;
+
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: Roboto, serif;
+    font-style: normal;
+    line-height: 2.4rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $text-black;
+
+    opacity: 0.5;
+  }
+
+  .modal-header__title {
+    margin: 0 0 2rem 0;
+
+    font-size: 4rem;
+    font-weight: 400;
+    font-family: Roboto, serif;
+    font-style: normal;
+    line-height: 4.8rem;
+    color: $text-black;
+
+    letter-spacing: -0.02em;
+  }
+
+  .modal-header__price {
+    max-width: 185px;
+    margin: 0 auto 3rem;
+    padding: 0;
+
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: Roboto, serif;
+    font-style: normal;
+    line-height: 7.2rem;
+
+    letter-spacing: -0.02em;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 17px;
+      height: 35px;
+
+      position: absolute;
+      left: 5px;
+      top: 13px;
+
+      background-image: url('../../images/usd.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .modal-body__item {
+    position: relative;
+
+    & .input-btn {
+      width: 24px;
+      height: 24px;
+      margin: 0;
+      padding: 0;
+
+      position: absolute;
+      right: 11px;
+      top: 16px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: none;
+      background: transparent;
+
+      &.hide {
+        display: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-input {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    & input {
+      font-family: Roboto, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.6rem;
+      line-height: 2rem;
+
+      letter-spacing: -0.02em;
+    }
+
+    &.name {
+      margin-bottom: 1.6rem;
+    }
+
+    &.number {
+      margin-bottom: 3.2rem;
+    }
+
+    & fieldset {
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      border-radius: 1.6rem;
+    }
+
+    .Mui-focused fieldset {
+      border: 1px solid #4bcfa0;
+    }
+
+    & p {
+      font-size: 1.2rem;
+      font-family: Roboto, serif;
+    }
+  }
+
+  .modal-btn {
+    width: 100%;
+
+    color: $text-white;
+    background-color: $text-accent;
+
+    transition: 0.3s all ease-in-out;
+
+    position: relative;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 20px;
+      height: 20px;
+
+      position: absolute;
+      right: 90px;
+      top: 16px;
+
+      background-image: url('../../images/arrow-right.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+
+      transition: 0.3s all ease-in-out;
+
+      opacity: 0;
+      z-index: 10;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+    }
+  }
+}
